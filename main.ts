@@ -79,9 +79,9 @@ namespace stepperMotor {
         //% blockId=moveForward block="move %this| %steps|%unit| forward"
         //% weight=85 blockGap=8
         moveForward(steps: number, unit: stepUnit): void {
-            
+
             switch (unit) {
-                case stepUnit.Rotations: steps = steps * 512; //512 steps = approximately 1 round
+                case stepUnit.Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
                 case stepUnit.Steps: steps = steps;
             }
 
@@ -98,7 +98,7 @@ namespace stepperMotor {
         moveBackward(steps: number, unit: stepUnit): void {
 
             switch (unit) {
-                case stepUnit.Rotations: steps = steps * 512; //512 steps = approximately 1 round
+                case stepUnit.Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
                 case stepUnit.Steps: steps = steps;
             }
 
