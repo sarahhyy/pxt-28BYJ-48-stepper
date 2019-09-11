@@ -1,6 +1,6 @@
 {
     "name": "pxt-28byj-48-stepper",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "",
     "dependencies": {
         "core": "*"
