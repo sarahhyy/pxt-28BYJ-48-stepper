@@ -96,7 +96,7 @@ namespace stepperMotor {
 
             for (let i = 0; i < steps; i++) {
                 this.steps(1);
-                basic.pause(this.pauseTime);
+                basic.pause(1);
             }
 
             this.state = 0;
@@ -113,7 +113,7 @@ namespace stepperMotor {
 
             for (let i = 0; i < steps; i++) {
                 this.steps(-1);
-                basic.pause(this.pauseTime);
+                basic.pause(1);
             }
 
             this.state = 0;
