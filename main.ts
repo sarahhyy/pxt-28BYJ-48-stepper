@@ -68,10 +68,10 @@ namespace stepperMotor {
             }
 
             this.state = this.state + direction;
-            if (this.state < 0) {
+            if (this.state < 1) {
                 this.state = 4;
             } else if (this.state > 4) {
-                this.state = 0;
+                this.state = 1;
             }
 
         }
