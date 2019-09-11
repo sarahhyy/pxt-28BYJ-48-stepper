@@ -133,7 +133,7 @@ namespace stepperMotor {
         let motor = new Motor();
         motor.setPins(in1, in2, in3, in4);
         motor.setState(0);
-        motor.setPause(1);
+        /*motor.setPause(1);*/
         return motor;
     }
 
