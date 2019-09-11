@@ -5,6 +5,7 @@
     /*
     /* And much help from Sparkfun's tutorial on building extensions in MakeCode
     /* https://learn.sparkfun.com/tutorials/how-to-create-a-makecode-package-for-microbit/all
+    /* Much love from Tinkercademy
 */
 
 enum stepUnit {
@@ -83,9 +84,9 @@ namespace stepperMotor {
 
         }
 
-        //% blockId=moveForward block="move %motor| %steps|%unit| forward"
+        //% blockId=moveAntiClockwise block="move %motor| %steps|%unit| anti-clockwise"
         //% weight=85 blockGap=8
-        moveForward(steps: number, unit: stepUnit): void {
+        moveAntiClockwise(steps: number, unit: stepUnit): void {
 
             switch (unit) {
                 case stepUnit.Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
@@ -100,9 +101,9 @@ namespace stepperMotor {
             this.state = 0;
         }
 
-        //% blockId=moveBackward block="move %motor| %steps|%unit| backward"
+        //% blockId=moveClockwise block="move %motor| %steps|%unit| clockwise"
         //% weight=84 blockGap=8
-        moveBackward(steps: number, unit: stepUnit): void {
+        moveClockwise(steps: number, unit: stepUnit): void {
 
             switch (unit) {
                 case stepUnit.Rotations: steps = steps * 2056; //2056 steps = approximately 1 round
