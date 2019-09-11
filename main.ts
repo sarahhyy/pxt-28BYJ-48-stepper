@@ -89,7 +89,7 @@ namespace stepperMotor {
                 this.steps(1);
                 basic.pause(1);
             }
-
+            basic.showIcon(IconNames.Heart);
             this.state = 0;
         }
 
@@ -106,7 +106,7 @@ namespace stepperMotor {
                 this.steps(-1);
                 basic.pause(1);
             }
-
+            basic.showIcon(IconNames.Heart);
             this.state = 0;
         }
     }
