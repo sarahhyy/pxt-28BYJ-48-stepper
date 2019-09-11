@@ -23,6 +23,7 @@ namespace stepperMotor {
         private input2: DigitalPin;
         private input3: DigitalPin;
         private input4: DigitalPin;
+        private pauseTime: number;
         private state: number;
 
         setPins(in1: DigitalPin, in2: DigitalPin, in3: DigitalPin, in4: DigitalPin): void {
@@ -35,6 +36,12 @@ namespace stepperMotor {
 
         setState(stateNum: number): void {
             this.state = stateNum;
+        }
+
+        //% blockId=setPause block="set delay time between each step to %pauseNum| ms"
+        //% weight=60 blockGap=8
+        setPause(pauseNum: number): void {
+            this.pauseTime = pauseNum
         }
 
         /* Functions for running a stepper motor by steps */
@@ -87,11 +94,10 @@ namespace stepperMotor {
 
             for (let i = 0; i < steps; i++) {
                 this.steps(1);
-                basic.pause(1);
+                basic.pause(this.pauseTime);
             }
 
             this.state = 0;
-            basic.showIcon(IconNames.Heart);
         }
 
         //% blockId=moveBackward block="move %this| %steps|%unit| backward"
@@ -105,11 +111,10 @@ namespace stepperMotor {
 
             for (let i = 0; i < steps; i++) {
                 this.steps(-1);
-                basic.pause(1);
+                basic.pause(this.pauseTime);
             }
 
             this.state = 0;
-            basic.showIcon(IconNames.Heart);
         }
     }
 
@@ -126,6 +131,7 @@ namespace stepperMotor {
         let motor = new Motor();
         motor.setPins(in1, in2, in3, in4);
         motor.setState(0);
+        motor.setPause(1);
         return motor;
     }
 
