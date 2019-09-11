@@ -38,7 +38,8 @@ namespace stepperMotor {
             this.state = stateNum;
         }
 
-
+        //% blockId=set_motor_calibration block="%motor|set delay between steps to %delayNum|ms"
+        //% weight=60 blockGap=8
         setDelay(delayNum: number): void {
             this.delay = delayNum;
         }
