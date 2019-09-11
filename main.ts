@@ -23,7 +23,6 @@ namespace stepperMotor {
         private input2: DigitalPin;
         private input3: DigitalPin;
         private input4: DigitalPin;
-        private pauseTime: number;
         private state: number;
 
         setPins(in1: DigitalPin, in2: DigitalPin, in3: DigitalPin, in4: DigitalPin): void {
@@ -37,14 +36,6 @@ namespace stepperMotor {
         setState(stateNum: number): void {
             this.state = stateNum;
         }
-
-        /*
-        //% blockId=setPause block="set delay time between each step to %mseconds| ms for %this|"
-        //% weight=60 blockGap=8
-        setPause(mseconds: number): void {
-            this.pauseTime = mseconds
-        }
-        */
 
         /* Functions for running a stepper motor by steps */
 
@@ -128,12 +119,10 @@ namespace stepperMotor {
     //% weight=90 blockGap=8
     //% parts="motor"
     //% blockSetVariable=motor
-
     export function createMotor(in1: DigitalPin, in2: DigitalPin, in3: DigitalPin, in4: DigitalPin): Motor {
         let motor = new Motor();
         motor.setPins(in1, in2, in3, in4);
         motor.setState(0);
-        /*motor.setPause(1);*/
         return motor;
     }
 
