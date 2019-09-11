@@ -83,7 +83,7 @@ namespace stepperMotor {
 
         }
 
-        //% blockId=moveForward block="move %motor| %steps|%unit| forward"
+        //% blockId=moveForward block="move %this| %steps|%unit| forward"
         //% weight=85 blockGap=8
         moveForward(steps: number, unit: stepUnit): void {
 
@@ -100,7 +100,7 @@ namespace stepperMotor {
             this.state = 0;
         }
 
-        //% blockId=moveBackward block="move %motor| %steps|%unit| backward"
+        //% blockId=moveBackward block="move %this| %steps|%unit| backward"
         //% weight=84 blockGap=8
         moveBackward(steps: number, unit: stepUnit): void {
 
