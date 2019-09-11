@@ -38,9 +38,9 @@ namespace stepperMotor {
             this.state = stateNum;
         }
 
-        //% blockId=setPause block="set delay time between each step to %pauseNum| ms for %motor|"
+        //% blockId=setPause block="set delay time between each step to %pause| ms for %this|"
         //% weight=60 blockGap=8
-        setPause(pauseNum: number): void {
+        setPause(pause: number): void {
             this.pauseTime = pauseNum
         }
 
