@@ -33,7 +33,7 @@ Change the speed of rotation by increasing or decreasing the delay between steps
 
 ## Example: Using moving anti-clockwise on button press A and clockwise on button press B
 
-Use this program to get your stepper motor moving!
+Use this program to get your stepper motor moving! Make sure your stepper motor is connected to pins P0, P1, P2 and P3 in that order. 
 
 ```
 input.onButtonPressed(Button.A, function () {
