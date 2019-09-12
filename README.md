@@ -21,16 +21,16 @@ Read more at https://makecode.microbit.org/extensions
 
 ## Basic Usage
 
-`||set motor to motor at in1/in2/in3/in4||
+`||set motor to motor at in1/in2/in3/in4||`
 
 Create a motor and specify the 4 input pins connecting it to the micro:bit.
 
-`||move motor 0 steps clockwise||
+`||move motor 0 steps clockwise||`
 
-`||move motor 0 steps anti-clockwise||
+`||move motor 0 steps anti-clockwise||`
 
 Use move motor clockwise or anti-clockwise to rotate the motor. Change the number of steps or rotations as desired.
 
-`||motor set delay between steps to 0 ms||
+`||motor set delay between steps to 0 ms||`
 
 Change the speed of rotation by increasing or decreasing the delay between steps.
