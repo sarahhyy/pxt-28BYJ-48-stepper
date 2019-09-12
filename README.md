@@ -4,7 +4,7 @@
 
 ## TODO
 
-- [ ] Add a reference for your blocks here
+- [y] Add a reference for your blocks here
 - [ ] Add "icon.png" image (300x200) in the root folder
 - [ ] Add "- beta" to the GitHub project description if you are still iterating it.
 - [ ] Turn on your automated build on https://travis-ci.org
@@ -13,11 +13,6 @@
 - [ ] Get your package reviewed and approved https://makecode.microbit.org/extensions/approval
 
 Read more at https://makecode.microbit.org/extensions
-
-## Supported targets
-
-* for PXT/microbit
-(The metadata above is needed for package search.)
 
 ## Basic Usage
 
@@ -51,3 +46,7 @@ let motor2 = stepperMotor.createMotor(
     DigitalPin.P3
 )
 ```
+
+## Supported targets
+
+* for PXT/microbit
