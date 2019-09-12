@@ -22,15 +22,32 @@ Read more at https://makecode.microbit.org/extensions
 ## Basic Usage
 
 `||set motor to motor at in1/in2/in3/in4||`
-
 Create a motor and specify the 4 input pins connecting it to the micro:bit.
 
 `||move motor 0 steps clockwise||`
-
 `||move motor 0 steps anti-clockwise||`
-
 Use move motor clockwise or anti-clockwise to rotate the motor. Change the number of steps or rotations as desired.
 
 `||motor set delay between steps to 0 ms||`
-
 Change the speed of rotation by increasing or decreasing the delay between steps.
+
+## Example: Using moving anti-clockwise on button press A and clockwise on button press B
+
+Use this program to get your stepper motor moving!
+
+```
+input.onButtonPressed(Button.A, function () {
+    motor.moveAntiClockwise(0.5, stepUnit.Rotations)
+})
+input.onButtonPressed(Button.B, function () {
+    motor.moveClockwise(0.5, stepUnit.Rotations)
+})
+
+let motor: stepperMotor.Motor = null
+let motor2 = stepperMotor.createMotor(
+    DigitalPin.P0,
+    DigitalPin.P1,
+    DigitalPin.P2,  
+    DigitalPin.P3
+)
+```
