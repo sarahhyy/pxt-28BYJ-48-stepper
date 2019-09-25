@@ -117,6 +117,14 @@ namespace stepperMotor {
 
             this.state = 0;
         }
+
+        //% blockId=stopMotor block="stop %motor"
+        //% weight=70 blockGap=8
+        stopMotor(): void {
+            this.state = 0;
+        }
+
+
     }
 
     /**
