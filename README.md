@@ -1,8 +1,10 @@
 # pxt-28byj-48-stepper
 
-The 28byj-48 stepper motor is well, ok for small projects. I have learnt it will not move the weight of a small collapsible umbrella. I was reduced to making a paper umbrella instead. Why in the world do you need to attach an umbrella to a stepper motor? If you ever needed an automated moving defense against Nerf bullets of course! Is one plausible answer. But my project is slightly more inspired by skin cancer fearing Asian auntie sensibilities.
-
 This extension also requires a driver board of some sort. I use the ULN2003. It works. 
+
+The 28byj-48 stepper motor is well, ok for small projects. I have learnt it will not move the weight of a small collapsible umbrella. I was reduced to making a paper umbrella instead. Why in the world do you need to attach an umbrella to a stepper motor? If you ever needed an automated moving defense against Nerf bullets of course! Is one plausible answer. But my project is slightly more inspired by skin cancer fearing Asian auntie sensibilities. Find out in the upcoming book - 
+
+Let's Get Hacking With Micro:bit! The Tinkercademy Guide for Teachers and Tinkerers.
 
 The Micro:bit Foundation requests we put up a link to the product page. I'm not sure which link would be best to put up to this rather  generic component so Internet to the rescue! Find out more about the 28byj-48 and ULN2003 driver here: 
 https://www.seeedstudio.com/blog/2019/03/04/driving-a-28byj-48-stepper-motor-with-a-uln2003-driver-board-and-arduino/
